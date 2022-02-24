@@ -11,6 +11,7 @@ namespace SojaExiles
 		public Animator openandclose;
 		public bool open;
 		public Transform Player;
+		public float distance;
 
 		void Start()
 		{
@@ -23,14 +24,11 @@ namespace SojaExiles
 				if (Player)
 				{
 					float dist = Vector3.Distance(Player.position, transform.position);
-					if (dist < 15)
+					if (dist < distance)
 					{
 						if (open == false)
 						{
-							if (Input.GetMouseButtonDown(0))
-							{
 								StartCoroutine(opening());
-							}
 						}
 						else
 						{
