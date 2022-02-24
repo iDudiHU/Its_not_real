@@ -16,24 +16,24 @@ MonoBehaviour:
   m_AdvancedMode: 0
   quality:
     m_OverrideState: 1
-    m_Value: 1
+    m_Value: 2
   threshold:
     m_OverrideState: 1
-    m_Value: 1.26
+    m_Value: 0.68
     min: 0
   intensity:
     m_OverrideState: 1
-    m_Value: 0.035
+    m_Value: 0.37
     min: 0
     max: 1
   scatter:
     m_OverrideState: 1
-    m_Value: 0.7
+    m_Value: 1
     min: 0
     max: 1
   tint:
     m_OverrideState: 1
-    m_Value: {r: 1, g: 1, b: 1, a: 1}
+    m_Value: {r: 0, g: 0.22958875, b: 1, a: 1}
     hdr: 0
     showAlpha: 0
     showEyeDropper: 1
@@ -52,7 +52,7 @@ MonoBehaviour:
     m_Value: 2
   m_HighQualityPrefiltering:
     m_OverrideState: 1
-    m_Value: 0
+    m_Value: 1
   m_HighQualityFiltering:
     m_OverrideState: 1
     m_Value: 1
@@ -92,10 +92,10 @@ MonoBehaviour:
     m_Value: {x: 1, y: 1, z: 1, w: -0.012492192}
   gamma:
     m_OverrideState: 1
-    m_Value: {x: 1, y: 1, z: 1, w: -0.01249219}
+    m_Value: {x: 1, y: 1, z: 1, w: 0.05020374}
   gain:
     m_OverrideState: 1
-    m_Value: {x: 1, y: 1, z: 1, w: 0.18738292}
+    m_Value: {x: 1, y: 1, z: 1, w: 0.4137931}
 --- !u!114 &3541192743279189162
 MonoBehaviour:
   m_ObjectHideFlags: 3

@@ -149,14 +149,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d08ce26990eb1a4a9177b860541e702, type: 3}
   m_Name: Exposure
   m_EditorClassIdentifier: 
-  active: 1
+  active: 0
   m_AdvancedMode: 0
   mode:
     m_OverrideState: 1
-    m_Value: 4
+    m_Value: 1
   meteringMode:
     m_OverrideState: 1
-    m_Value: 2
+    m_Value: 4
   luminanceSource:
     m_OverrideState: 0
     m_Value: 1
@@ -165,13 +165,13 @@ MonoBehaviour:
     m_Value: 0
   compensation:
     m_OverrideState: 1
-    m_Value: 0.6
+    m_Value: 9.16
   limitMin:
     m_OverrideState: 1
-    m_Value: -2.6246402
+    m_Value: -5
   limitMax:
     m_OverrideState: 1
-    m_Value: 2.5462863
+    m_Value: 2.034923
   curveMap:
     m_OverrideState: 0
     m_Value:
@@ -276,13 +276,13 @@ MonoBehaviour:
     m_OverrideState: 0
     m_Value: 0
   centerAroundExposureTarget:
-    m_OverrideState: 0
-    m_Value: 0
+    m_OverrideState: 1
+    m_Value: 1
   proceduralCenter:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: {x: 0.5, y: 0.5}
   proceduralRadii:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: {x: 0.3, y: 0.3}
   maskMinIntensity:
     m_OverrideState: 0
@@ -291,6 +291,6 @@ MonoBehaviour:
     m_OverrideState: 0
     m_Value: 30
   proceduralSoftness:
-    m_OverrideState: 0
-    m_Value: 0.5
+    m_OverrideState: 1
+    m_Value: 0
     min: 0
