@@ -1,9 +1,8 @@
-﻿using UnityEngine;
-namespace Invector.vEventSystems
+﻿namespace Invector.vEventSystems
 {
-    public interface vIAttackReceiver
-    {        
-        void OnReceiveAttack(vDamage damage, vIMeleeFighter attacker);
-    }
+	public interface vIAttackReceiver
+	{
+		void OnReceiveAttack(vDamage damage, vIMeleeFighter attacker);
+	}
 }
 

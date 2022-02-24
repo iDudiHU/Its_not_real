@@ -1,14 +1,11 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-namespace Invector.vEventSystems
+﻿namespace Invector.vEventSystems
 {
-    public interface vIAttackListener
-    {
-        void OnEnableAttack();
+	public interface vIAttackListener
+	{
+		void OnEnableAttack();
 
-        void OnDisableAttack();
+		void OnDisableAttack();
 
-        void ResetAttackTriggers();
-    }
+		void ResetAttackTriggers();
+	}
 }

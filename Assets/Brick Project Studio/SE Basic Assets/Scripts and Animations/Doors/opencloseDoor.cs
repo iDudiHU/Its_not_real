@@ -1,5 +1,4 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 namespace SojaExiles
@@ -28,7 +27,7 @@ namespace SojaExiles
 					{
 						if (open == false)
 						{
-								StartCoroutine(opening());
+							StartCoroutine(opening());
 						}
 						else
 						{

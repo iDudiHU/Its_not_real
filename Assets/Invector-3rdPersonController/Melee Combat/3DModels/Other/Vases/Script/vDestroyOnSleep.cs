@@ -1,22 +1,22 @@
-﻿using UnityEngine;
-using System.Collections;
+﻿using System.Collections;
+using UnityEngine;
 namespace Invector
 {
-    public class vDestroyOnSleep : MonoBehaviour
-    {
-        IEnumerator Start()
-        {
-            var rigdb = GetComponent<Rigidbody>();
-            var collider = GetComponent<Collider>();
+	public class vDestroyOnSleep : MonoBehaviour
+	{
+		IEnumerator Start()
+		{
+			var rigdb = GetComponent<Rigidbody>();
+			var collider = GetComponent<Collider>();
 
-            yield return transform.parent.gameObject.activeSelf;
+			yield return transform.parent.gameObject.activeSelf;
 
-            while (!rigdb.IsSleeping())
-                yield return new WaitForSeconds(2f);
+			while (!rigdb.IsSleeping())
+				yield return new WaitForSeconds(2f);
 
-            Destroy(rigdb);
-            if (collider)
-                Destroy(collider);
-        }
-    }
+			Destroy(rigdb);
+			if (collider)
+				Destroy(collider);
+		}
+	}
 }

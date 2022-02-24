@@ -1,17 +1,15 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using System.Collections.Generic;
 namespace Invector.DefineSymbolsManager
 {
-    public class ShooterDefineSymbols : InvectorDefineSymbols
-    {
-        public override List<string> GetSymbols
-        {
-            get
-            {
-              return  new List<string>() { "INVECTOR_SHOOTER" };
-            }
-        }
-      
-    }
+	public class ShooterDefineSymbols : InvectorDefineSymbols
+	{
+		public override List<string> GetSymbols
+		{
+			get
+			{
+				return new List<string>() { "INVECTOR_SHOOTER" };
+			}
+		}
+
+	}
 }

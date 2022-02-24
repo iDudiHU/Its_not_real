@@ -1,5 +1,4 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 namespace SojaExiles
@@ -12,41 +11,33 @@ namespace SojaExiles
 		public Animator pull_01;
 		public bool open;
 		public Transform Player;
+		public Activator _Activator;
+
 
 		void Start()
 		{
 			open = false;
+			_Activator = GetComponent<Activator>();
 		}
 
-		void OnMouseOver()
+		void Update()
 		{
 			{
-				if (Player)
+				float dist = Vector3.Distance(Player.position, transform.position);
+				if (dist < 4)
 				{
-					float dist = Vector3.Distance(Player.position, transform.position);
-					if (dist < 10)
+					int i = 0;
+					if (open == false && i < 1)
 					{
-						print("object name");
-						if (open == false)
-						{
-							if (Input.GetMouseButtonDown(0))
-							{
-								StartCoroutine(opening());
-							}
-						}
-						else
-						{
-							if (open == true)
-							{
-								if (Input.GetMouseButtonDown(0))
-								{
-									StartCoroutine(closing());
-								}
-							}
-
-						}
-
+						_Activator.Activate();
+						StartCoroutine(opening());
+						i++;
 					}
+					else
+					{
+						return;
+					}
+
 				}
 
 			}

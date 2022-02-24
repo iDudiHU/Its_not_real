@@ -1,30 +1,40 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class TableFlipR: MonoBehaviour {
+public class TableFlipR : MonoBehaviour
+{
 
 	public Animator FlipR;
 	public bool open;
 	public Transform Player;
 
-	void Start (){
+	void Start()
+	{
 		open = false;
 	}
 
-	void OnMouseOver (){
+	void OnMouseOver()
+	{
 		{
-			if (Player) {
-				float dist = Vector3.Distance (Player.position, transform.position);
-				if (dist < 15) {
-					if (open == false) {
-						if (Input.GetMouseButtonDown (0)) {
-							StartCoroutine (opening ());
+			if (Player)
+			{
+				float dist = Vector3.Distance(Player.position, transform.position);
+				if (dist < 15)
+				{
+					if (open == false)
+					{
+						if (Input.GetMouseButtonDown(0))
+						{
+							StartCoroutine(opening());
 						}
-					} else {
-						if (open == true) {
-							if (Input.GetMouseButtonDown (0)) {
-								StartCoroutine (closing ());
+					}
+					else
+					{
+						if (open == true)
+						{
+							if (Input.GetMouseButtonDown(0))
+							{
+								StartCoroutine(closing());
 							}
 						}
 
@@ -37,18 +47,20 @@ public class TableFlipR: MonoBehaviour {
 
 	}
 
-	IEnumerator opening(){
-		print ("you are opening the door");
-        FlipR.Play ("Rup");
+	IEnumerator opening()
+	{
+		print("you are opening the door");
+		FlipR.Play("Rup");
 		open = true;
-		yield return new WaitForSeconds (.5f);
+		yield return new WaitForSeconds(.5f);
 	}
 
-	IEnumerator closing(){
-		print ("you are closing the door");
-        FlipR.Play ("Rdown");
+	IEnumerator closing()
+	{
+		print("you are closing the door");
+		FlipR.Play("Rdown");
 		open = false;
-		yield return new WaitForSeconds (.5f);
+		yield return new WaitForSeconds(.5f);
 	}
 
 

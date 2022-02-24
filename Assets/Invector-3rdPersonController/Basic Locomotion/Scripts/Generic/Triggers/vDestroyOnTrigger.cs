@@ -1,19 +1,18 @@
-﻿using UnityEngine;
-using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+using UnityEngine;
 namespace Invector
 {
-    public class vDestroyOnTrigger : MonoBehaviour
-    {
-        public List<string> targsToDestroy;
-        public float destroyDelayTime;
+	public class vDestroyOnTrigger : MonoBehaviour
+	{
+		public List<string> targsToDestroy;
+		public float destroyDelayTime;
 
-        void OnTriggerEnter(Collider other)
-        {
-            if (targsToDestroy.Contains(other.gameObject.tag))
-            {
-                Destroy(other.gameObject, destroyDelayTime);
-            }
-        }
-    }
+		void OnTriggerEnter(Collider other)
+		{
+			if (targsToDestroy.Contains(other.gameObject.tag))
+			{
+				Destroy(other.gameObject, destroyDelayTime);
+			}
+		}
+	}
 }
