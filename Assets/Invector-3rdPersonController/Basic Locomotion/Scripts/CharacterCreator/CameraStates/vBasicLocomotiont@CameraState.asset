@@ -164,16 +164,16 @@ MonoBehaviour:
     fixedAngle: {x: 0, y: 0}
     lookPoints:
     - pointName: point_01
-      positionPoint: {x: 26.55739, y: 11.5149355, z: -14.382481}
-      eulerAngle: {x: 18.395489, y: 3.0748892, z: 0.00039735215}
+      positionPoint: {x: -19.052425, y: 2.860657, z: 2.4602509}
+      eulerAngle: {x: 26.746046, y: 109.506, z: -0.0023805965}
       freeRotation: 0
     - pointName: point_02
-      positionPoint: {x: 29.395, y: 0.709, z: 2.2409992}
-      eulerAngle: {x: 357.80994, y: 88.88348, z: 359.81253}
+      positionPoint: {x: 18.786074, y: 1.693, z: 0.72258866}
+      eulerAngle: {x: 357.8099, y: 271.81335, z: 359.81253}
       freeRotation: 0
     - pointName: point_03
-      positionPoint: {x: 37.249695, y: 0.97621524, z: 2.2345524}
-      eulerAngle: {x: 2.0625482, y: 271.75256, z: -0.00016467154}
+      positionPoint: {x: 17.549253, y: 0.97621524, z: 0.55774415}
+      eulerAngle: {x: 2.0625484, y: 271.75256, z: -0.00016477834}
       freeRotation: 0
     cameraMode: 2
   - Name: New State6
