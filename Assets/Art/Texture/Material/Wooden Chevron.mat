@@ -208,13 +208,13 @@ Material:
     - _GlossMapScale: 1
     - _Glossiness: 0.27
     - _GlossyReflections: 1
-    - _HeightAmplitude: 0.5188
+    - _HeightAmplitude: 0
     - _HeightCenter: 1
     - _HeightMapParametrization: 0
     - _HeightMax: 1
     - _HeightMin: -1
     - _HeightOffset: 0
-    - _HeightPoMAmplitude: 51.88
+    - _HeightPoMAmplitude: 0
     - _HeightTessAmplitude: 2
     - _HeightTessCenter: 0.5
     - _InvTilingScale: 1
@@ -224,11 +224,11 @@ Material:
     - _LinkDetailsWithBase: 0
     - _MaterialID: 1
     - _Metallic: 0
-    - _MetallicRemapMax: 0
-    - _MetallicRemapMin: 0
+    - _MetallicRemapMax: 1
+    - _MetallicRemapMin: 0.15135422
     - _Mode: 0
     - _NormalMapSpace: 0
-    - _NormalScale: 8
+    - _NormalScale: 1.32
     - _OcclusionStrength: 1
     - _OpaqueCullMode: 2
     - _PPDLodThreshold: 5
@@ -242,7 +242,7 @@ Material:
     - _ReceivesSSRTransparent: 0
     - _RefractionModel: 0
     - _Smoothness: 0.27
-    - _SmoothnessRemapMax: 0.27
+    - _SmoothnessRemapMax: 0.3841795
     - _SmoothnessRemapMin: 0
     - _SmoothnessTextureChannel: 0
     - _SpecularAAScreenSpaceVariance: 0.1
