@@ -15085,7 +15085,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioSource: {fileID: 106114, guid: dfea19d1d34dd174d87195f78cb44ae7, type: 3}
   sounds:
-  - {fileID: 0}
+  - {fileID: 8300000, guid: 3bee701a0499124489bf9c9fea14f686, type: 3}
   triggerTime: 0
 --- !u!114 &114735006800459170
 MonoBehaviour:
@@ -22313,7 +22313,7 @@ AnimatorStateMachine:
   m_ChildStates:
   - serializedVersion: 1
     m_State: {fileID: 1102928754595727934}
-    m_Position: {x: 324, y: 168, z: 0}
+    m_Position: {x: 320, y: 170, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1102835073024338544}
     m_Position: {x: 324, y: 108, z: 0}
