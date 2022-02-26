@@ -18,7 +18,7 @@ public class Darkness_Meter : MonoBehaviour
 	private void Update()
 	{
         var newAlpha = image.color;
-		newAlpha.a = 1 - (slider.value/100 - presetAlpha);
+		newAlpha.a = 1 - (slider.value/100 - presetAlpha)*(slider.value / 100 - presetAlpha);
         image.color = newAlpha;
 	}
 }
